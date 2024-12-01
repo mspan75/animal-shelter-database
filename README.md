@@ -11,14 +11,28 @@ Ensure data consistency and reliability through proper error handling.
 Facilitates efficient animal record management
 Supports complex queries for data analysis
 
-Technical Implementation
-MongoDB Driver
-This project uses the PyMongo driver (pymongo) for the following reasons:
-Native Python integration with MongoDB
-Comprehensive support for all CRUD operations
-Robust authentication and security features
-Excellent documentation and community support
-Built-in connection pooling and error handling
+
+Technical Stack and Tools
+MongoDB Version: 1.8.0
+PyMongo Driver Version: 3.12.0
+Python Version: 3.9.12
+Development Environment: Apporto Virtual Desktop Interface with Linux-based environment
+Testing Framework: Jupyter Notebooks
+
+MongoDB was selected as the database solution for several key reasons:
+Flexible schema design optimized explicitly for animal shelter data with varying attributes (demonstrated in the animal_data structure)
+Robust querying capabilities supporting complex searches by breed, age, and location (as shown in the read method examples)
+Scalability to handle growing shelter data through MongoDB's horizontal scaling
+Native geospatial indexing for location-based features (utilized with location_lat and location_long fields)
+
+PyMongo 3.12.0 was chosen as our MongoDB driver because:
+Direct Python 3.9 integration enabling seamless data operations
+Enterprise-grade security features including secure authentication (demonstrated in connection string)
+Built-in connection pooling as shown in the MongoDB Driver implementation
+Robust error handling capabilities implemented in all CRUD operations
+
+Getting Started
+To get started with this CRUD module, you'll need access to a MongoDB instance and the proper authentication credentials
 
 Installation
 mongodb://{username}:{password}@nv-desktop-services.apporto.com:33945      
